@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A3DC Genome Functional Annotation</title>
+<meta name="description" content="Interactive Krona chart of the functional annotation of the A3DC genome.">
+<style>
+  body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #1d1d1d;
+    background: #ffffff;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 1.6em; line-height: 1.25; margin: 0 0 16px; }
+  h2 { font-size: 1.15em; margin: 0 0 4px; }
+  p { margin: 0 0 16px; }
+  .card { margin: 24px 0; padding: 14px 16px; border: 1px solid #d6d6d6; border-radius: 6px; }
+  .card p { margin: 0; }
+  a { color: #0b57d0; }
+  .note, footer { font-size: 0.9em; color: #555555; }
+  footer { margin-top: 32px; border-top: 1px solid #e3e3e3; padding-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>A3DC Genome Functional Annotation</h1>
+
+  <p>This interactive Krona chart shows the annotated functions of the A3DC
+  genome as nested rings. The center holds 23 broad functional categories,
+  such as protein metabolism, carbohydrates, and respiration; each ring
+  outward splits them into finer groups, ending in the 781 individual
+  functional roles at the edge. Slice size is the number of roles in that
+  group.</p>
+
+  <div class="card">
+    <h2><a href="A3DC-genome-Krona.html">Open the A3DC genome chart</a></h2>
+    <p>Click a category to zoom in to its subgroups and roles, or use the
+    search box to find a specific gene function or EC number.</p>
+  </div>
+
+  <p class="note">The chart is a single self-contained HTML file (about
+  350 KB). It works on a phone but is easiest to explore on a larger
+  screen. Click the center to zoom back out.</p>
+
+  <footer>
+    <a href="https://github.com/duancopeland/A3DC">Source on GitHub</a>.
+    Chart made with <a href="https://github.com/marbl/Krona">Krona</a>
+    (Ondov et al., 2011).
+  </footer>
+</main>
+</body>
+</html>
